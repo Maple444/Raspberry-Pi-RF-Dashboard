@@ -13,7 +13,8 @@ while True:
             print("Number of aircraft: " + str(len(data['aircraft'])))
 
             for plane in data['aircraft']:
-                print(plane['flight'] + ' at ' + str(plane["alt_baro"]) + " ft")
+                # print(plane['flight'] + ' at ' + str(plane["alt_baro"]) + " ft")
+                print(f"{plane['flight']} at {str(plane['alt_baro'])} ft")
 
     except FileNotFoundError:
         print("The airplane data file could not be found.")
