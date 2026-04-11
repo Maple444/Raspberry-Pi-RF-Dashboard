@@ -1,0 +1,18 @@
+{
+  "aircraft": [
+    {
+      "hex": "a1b2c3",
+      "flight": "DAL203",
+      "lat": 33.64,
+      "lon": -84.43,
+      "alt_baro": 32000
+    },
+    {
+      "hex": "d4e5f6",
+      "flight": "UAL415",
+      "lat": 33.75,
+      "lon": -84.39,
+      "alt_baro": 29000
+    }
+  ]
+}
