@@ -14,7 +14,7 @@ while True:
 
             for plane in data['aircraft']:
                 # print(plane['flight'] + ' at ' + str(plane["alt_baro"]) + " ft")
-                print(f"{plane['flight']} at {str(plane['alt_baro'])} ft")
+                print(f"{plane.get('flight')} at {str(plane.get('alt_baro'))} ft")
 
     except FileNotFoundError:
         print("The airplane data file could not be found.")
