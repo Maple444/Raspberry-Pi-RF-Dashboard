@@ -6,3 +6,5 @@ It requires an RTL-SDR receiver and anetenna as well as a working Raspberry Pi. 
 Takes output data from ReadSb and uses a Python script to make it into a readable format.
 
 In the future, a web dashboard that can be enable on a working Linux server or Docker container will be added.
+
+> Readme last updated April 11th, 2026
