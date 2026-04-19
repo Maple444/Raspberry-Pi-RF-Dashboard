@@ -16,17 +16,17 @@ while True:
 
         with open(aircraftsFile, "r") as file:
             data = json.load(file)
-            # print(data['aircraft'])
 
             # Holds all of the airplane data 
-            aircraft_list = data.get(aircraft,[])
+            aircraft_list = data.get("aircraft",[])
 
             print("Number of aircraft: " + len(aircraft_list))
             print('-' * 40)
 
-            for plane in data['aircraft']:
-                # print(plane['flight'] + ' at ' + str(plane["alt_baro"]) + " ft")
-                print(f"Aircraft {plane.get('flight')} is at {str(plane.get('alt_baro'))} ft.")
+            for plane in aircraft_list:
+                flight = plane.get("flight", "Unknown")
+                alt = plane.get("alt_baro", "N/A")
+                print(f"Aircraft {flight} is at {alt} ft.")
 
     except FileNotFoundError:
         print("The airplane data file could not be found.")
@@ -35,6 +35,7 @@ while True:
         print("You do not have permission to read this file.")
 
     except json.JSONDecodeError:
+        # readsb may be writing the file while we read it
         pass
 
     time.sleep(1)
