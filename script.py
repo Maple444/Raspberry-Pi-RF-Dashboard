@@ -7,12 +7,12 @@ count = 0
 
 while True:
     try:
-        os.system('clear')
-        
         if not os.path.exists(aircraftsFile):
             print("Waiting for readsb aircraft data")
             time.sleep(1)
             continue
+
+        os.system('clear')
 
         with open(aircraftsFile, "r") as file:
             data = json.load(file)
@@ -39,4 +39,3 @@ while True:
         pass
 
     time.sleep(1)
-    ## count += 1
