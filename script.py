@@ -1,11 +1,19 @@
 import json
 import time
+import os
 
 aircraftsFile = "/run/readsb/aircraft.json"
 count = 0
 
 while True:
     try:
+        os.system('clear')
+        
+        if not os.path.exists(aircraftsFile):
+            print("Waiting for readsb aircraft data")
+            time.sleep(1)
+            continue
+
         with open(aircraftsFile, "r") as file:
             data = json.load(file)
             # print(data['aircraft'])
@@ -21,6 +29,9 @@ while True:
 
     except PermissionError:
         print("You do not have permission to read this file.")
+
+    except json.JSONDecodeError:
+        pass
 
     time.sleep(1)
     ## count += 1
