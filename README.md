@@ -1,5 +1,5 @@
-# Raspberry Pi RF Web Dashboard
-A program that takes ADS-B aircraft data from ReadSb (a Dump1090 fork that puts this into a JSON file) and turns it into an easy-to-read CLI and web interface.
+# Raspberry Pi RF Dashboard
+A program that takes ADS-B aircraft data from ReadSb (a Dump1090 fork that puts this into a JSON file) and turns it into an easy-to-read CLI interface.
 
 It requires an RTL-SDR receiver and anetenna as well as a working Raspberry Pi. During development, a **Raspberry Pi 4** running Debian 13 was used. Performance on older models is not guaranteed.
 
