@@ -20,7 +20,7 @@ while True:
             # Holds all of the airplane data 
             aircraft_list = data.get("aircraft",[])
 
-            print("Number of aircraft: " + len(aircraft_list))
+            print("Number of aircraft: " + str(len(aircraft_list)))
             print('-' * 40)
 
             for plane in aircraft_list:
