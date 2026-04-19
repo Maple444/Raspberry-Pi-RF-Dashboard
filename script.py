@@ -3,7 +3,6 @@ import time
 import os
 
 aircraftsFile = "/run/readsb/aircraft.json"
-count = 0
 
 while True:
     try:
