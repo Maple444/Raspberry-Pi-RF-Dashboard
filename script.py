@@ -18,7 +18,11 @@ while True:
             data = json.load(file)
             # print(data['aircraft'])
 
-            print("Number of aircraft: " + str(len(data['aircraft'])))
+            # Holds all of the airplane data 
+            aircraft_list = data.get(aircraft,[])
+
+            print("Number of aircraft: " + len(aircraft_list))
+            print('-' * 40)
 
             for plane in data['aircraft']:
                 # print(plane['flight'] + ' at ' + str(plane["alt_baro"]) + " ft")
