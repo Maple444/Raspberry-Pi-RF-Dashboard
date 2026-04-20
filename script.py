@@ -42,6 +42,11 @@ while True:
                 alt = plane.get("alt_baro", "N/A")
                 print(f"Aircraft {flight} is at {alt} ft.")
 
+                print('')
+                print('')
+
+                print("Be sure your SDR and its antenna are in an open area with lots of reception!")
+
     except FileNotFoundError:
         print("The airplane data file could not be found.")
 
