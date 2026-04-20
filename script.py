@@ -26,7 +26,7 @@ while True:
         os.system('clear')
 
         # print(titleBanner)
-        print("SDR Aircraft Tracker") ## Temporary title text
+        print("SDR Aircraft Tracker\n") ## Temporary title text
 
         with open(aircraftsFile, "r") as file:
             data = json.load(file)
