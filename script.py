@@ -44,8 +44,8 @@ while True:
 
                 print('')
                 print('')
-
-                print("Be sure your SDR and its antenna are in an open area with lots of reception!")
+            
+            print("Be sure your SDR and its antenna are in an open area with lots of reception!")
 
     except FileNotFoundError:
         print("The airplane data file could not be found.")
